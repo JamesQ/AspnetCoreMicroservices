@@ -1,0 +1,29 @@
+[Root Folder for Docker command]
+: Start from "src" folder which the solution file exists 
+
+[Docker Settings]
+<MongoDB>
+1) Install : docker pull mongo
+2) Setting : docker run -d -p 27017:27017 --name shopping-mongo mongo
+3) View Logs : docker logs -f shopping-mongo
+4) (docker) Interactive Terminal for MongoDB Connection : docker exec -it shopping-mongo /bin/bash
+
+[Docker Container Delete Command]
+* Delete an existing container
+Stop 			>> docker stop [containerid]
+Remove 		>> docker rm [containerid]
+Check 		>> docker rmi [containerid]
+
+[Docker Container Start Command]
+>> docker start $(docker ps -aq)
+
+[Docker-Compose Command]
+Create Docker Container 			>> docker-compose -f docker-compose.yml -f docker-compose.override.yml up -d
+Remove Docker Container 		>> docker-compose -f docker-compose.yml -f docker-compose.override.yml down
+
+[Docker Image Removal Command]
+>> docker ps -aq
+>> docker stop $(docker ps -aq)
+>> docker rm $(docker ps -aq)
+>> docker rmi $(docker images -q)
+>> docker system prune
