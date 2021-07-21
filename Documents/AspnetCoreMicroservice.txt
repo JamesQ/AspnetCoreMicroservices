@@ -20,7 +20,7 @@ Check 		>> docker rmi [containerid]
 [Docker-Compose Command]
 Create Docker Container 			>> docker-compose -f docker-compose.yml -f docker-compose.override.yml up -d
 Remove Docker Container 		>> docker-compose -f docker-compose.yml -f docker-compose.override.yml down
-
+Build Docker Container 			>> docker-compose -f docker-compose.yml -f docker-compose.override.yml up --build
 [Docker Image Removal Command]
 >> docker ps -aq
 >> docker stop $(docker ps -aq)
