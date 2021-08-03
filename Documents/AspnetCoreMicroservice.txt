@@ -16,6 +16,7 @@ Check 		>> docker rmi [containerid]
 
 [Docker Container Start Command]
 >> docker start $(docker ps -aq)
+>> docker stop $(docker ps -aq)
 
 [Docker-Compose Command]
 Create Docker Container 			>> docker-compose -f docker-compose.yml -f docker-compose.override.yml up -d
@@ -35,3 +36,4 @@ Build Docker Container 			>> docker-compose -f docker-compose.yml -f docker-comp
  > LSP(Liskov Substitusion Principle) 리스코프 치환 법칙
  > ISP(Interface Segregation Principle) 인터페이스 분리 원칙
  > DIP(Dependency Inversion Principle) 의존성 역전 법칙
+ 
