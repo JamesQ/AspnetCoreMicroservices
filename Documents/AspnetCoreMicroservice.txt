@@ -37,3 +37,8 @@ Build Docker Container 			>> docker-compose -f docker-compose.yml -f docker-comp
  > ISP(Interface Segregation Principle) 인터페이스 분리 원칙
  > DIP(Dependency Inversion Principle) 의존성 역전 법칙
  
+ 
+ Install-Package MassTransit
+ Install-Package MassTransit.RabbitMQ
+ Install-Package MassTransit.AspNetCore
+ 
